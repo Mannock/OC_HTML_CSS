@@ -2,6 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <!--Autre moyen d'intégrer du CSS, moins conseillé
+            <style>
+                p
+                {
+                    color: blue;
+                }
+        -->
+        <link rel="stylesheet" href="style.css" />
         <title>Titre</title>
     </head>
 
@@ -9,7 +17,7 @@
 <!-- Ceci est un commentaire-->
         <h1>Titre super important</h1>
 
-        <p> Un paragraphe de texte</p>
+        <p class="introduction"> Un paragraphe de texte</p>
         
         <h2>Les balises de styles</h2>
 
@@ -79,9 +87,11 @@
         </p>
         <p>
             Pour faire une miniature cliquable, si l'image est trop grosse, alors tout simplement: <br />
-            <a href="images/chameleon.jpg"><img src="images/mini_chameleon.jpg" alt="Un cameleon" title="Cliquez pour agrandir"></a>
+            <a href="images/chameleon.jpg"><img src="images/mini_chameleon.jpg" alt="Un cameleon" title="Cliquez pour agrandir" class="flottant" /></a>
         </p>
-        <h3>Les figures</h3>
+        <p>Ici, dans le code CSS, on a utilisé float sur l'image du dessus pour faire en sorte d'avoir ce texte qui vient s'incruster à droite (ou gauche) de l'image.
+        </p>
+        <h3 class="figure">Les figures</h3>
         <p>Les figures viennent illuster le texte.Contrairement à une image, elle ne se place pas forcément dans un paragraphe.</p>
         <figure>
             <img src="images/figure.PNG" alt="Exemple de figure">
